@@ -39,8 +39,7 @@ public class Manager : MonoBehaviour
                     case "Scissors":
                         Result.text = "The rock destroys the scissors, you lose!";
                         logicManager.addLoss();
-                        break;
-                    
+                        break;                    
                 }
 
                 AIChoice.sprite = Rock;
@@ -63,7 +62,6 @@ public class Manager : MonoBehaviour
                         Result.text = "The scissors cuts the paper, you win!";
                         logicManager.addScore();
                         break;
-
                 }
 
                 AIChoice.sprite = Paper;
@@ -85,7 +83,6 @@ public class Manager : MonoBehaviour
                     case "Scissors":
                         Result.text = "Tie!";
                         logicManager.addTie();
-
                         break;
                 }
 
