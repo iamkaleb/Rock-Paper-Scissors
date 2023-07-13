@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Manager : MonoBehaviour
 {
@@ -91,5 +93,10 @@ public class Manager : MonoBehaviour
                 break;
 
         }
+    }
+
+    public void OnMouseDown(string myChoice)
+    {
+        Play(myChoice);
     }
 }
