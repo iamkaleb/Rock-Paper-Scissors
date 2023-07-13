@@ -96,4 +96,20 @@ public class Manager : MonoBehaviour
     {
         Play(myChoice);
     }
+
+    //public void OnCollisionEnter(Collision collision)
+    //{
+    //    if(collision.gameObject.name == "Rock")
+    //    {
+    //        Play("Rock");
+    //    }
+    //    if (collision.gameObject.name == "Paper")
+    //    {
+    //        Play("Paper");
+    //    }
+    //    if (collision.gameObject.name == "Scissors")
+    //    {
+    //        Play("Scissors");
+    //    }
+    //}
 }
