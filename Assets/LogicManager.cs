@@ -6,24 +6,33 @@ public class LogicManager : MonoBehaviour
     public int playerWins;
     public int playerTies;
     public int playerLosses;
-    public Text ScoreText;
+    public Text WinText;
+    public Text LossText;
+    public Text TieText;
 
     [ContextMenu("Increase Wins")]
     public void addScore()
     {
         playerWins++;
-        ScoreText.text = $"Wins: {playerWins}. Ties: {playerTies}. Losses: {playerLosses}.";
+        SetText();
     }
     [ContextMenu("Increase Ties")]
     public void addTie()
     {
         playerTies++;
-        ScoreText.text = $"Wins: {playerWins}. Ties: {playerTies}. Losses: {playerLosses}.";
+        SetText();
     }
     [ContextMenu("Increase Losses")]
     public void addLoss()
     {
         playerLosses++;
-        ScoreText.text = $"Wins: {playerWins}. Ties: {playerTies}. Losses: {playerLosses}.";
+        SetText();
+    }
+
+    private void SetText()
+    {
+        WinText.text = $"Wins: {playerWins}";
+        LossText.text = $"Losses: {playerLosses}";
+        TieText.text = $"Tie: {playerTies}";
     }
 }
